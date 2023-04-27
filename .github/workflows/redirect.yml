@@ -29,7 +29,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          cd u
           mkdir ${{ github.event.inputs.id }}
           cd ${{ github.event.inputs.id }}
           echo "<title>Redirecting...</title>" > index.html
